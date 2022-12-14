@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+     <ul>
+        <li>list 1</li>
+        <li id="first">list 2</li>
+        <li class="c1">list 3</li>
+     </ul>
+     <div id="div1">
+     <h1> heading 1</h1>
+     <p> pra 1</p>
+     <h2> heading 2</h2>
+     <p>pra 2 </p>
+     <h2>heading 3 </h2>
+     <p> pra 3</p>
+    </div>
+
+    <script>
+        let div1 = document.getElementById("div1");
+        let elm = div1.getElementsByTagName("h2");
+        // console.log(elm);
+
+        for (let i = 0; i < elm.length; i++){
+            elm[i].innerHTML = " HELLO ";
+        }
+    </script>
+</body>
+</html>
